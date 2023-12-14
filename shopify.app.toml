@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "node-template-app"
+client_id = "09618ff12bca6e15459c7a4e5607bbfb"
+application_url = "https://cents-bon-trinidad-ship.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products, write_content"
+
+[auth]
+redirect_urls = [
+  "https://cents-bon-trinidad-ship.trycloudflare.com/auth/callback",
+  "https://cents-bon-trinidad-ship.trycloudflare.com/auth/shopify/callback",
+  "https://cents-bon-trinidad-ship.trycloudflare.com/api/auth/callback",
+  "https://cents-bon-trinidad-ship.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "hungstore21.myshopify.com"
